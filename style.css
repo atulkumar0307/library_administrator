@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #243b55;
+    height: 100vh;
+    background-image: url(bg-imge.jpg);
+    background-size:cover;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.login-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px rgba(227, 222, 222, 0.5);
+}
+.login-box h2{
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+.login-box .label-input-box label{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.login-box .label-input-box input{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    margin: 5px 0px 20px;
+    border-style: 0px;
+    background-color: #bed5f0;
+    border-radius: 5px;
+}
+.login-box .label-input-box input:focus{
+    outline: none;
+    border: 3px solid #34b6bc; 
+}
+button{
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    background-color: #bed5f0;
+    box-shadow: 1px 1px 5px rgba(227, 222, 222, 0.5);
+}
+button:hover{ 
+    border: none;
+    background-color:  #03e9f4;
+    transition: all .2s;
+    box-shadow: 1px 1px 1px #264b4d;
+    letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+    .login-box {
+        width: 60%;
+    }
+}
+@media (max-width:450px) {
+    .login-box{
+        width: 90%;
+    }
+}
